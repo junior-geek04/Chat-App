@@ -52,7 +52,7 @@ const Users = (props) => {
     <List className={classes.list}>
       {users && (
         <React.Fragment>
-          {users.map((u) => (
+          {Array.from(users).map((u) => (
             <ListItem
               className={classes.listItem}
               key={u._id}

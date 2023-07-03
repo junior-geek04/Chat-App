@@ -83,7 +83,7 @@ const Conversations = (props) => {
 
       {conversations && (
         <React.Fragment>
-          {conversations.map((c) => (
+          {Array.from(conversations).map((c) => (
             <ListItem
               className={classes.listItem}
               key={c._id}

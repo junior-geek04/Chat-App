@@ -152,7 +152,7 @@ const ChatBox = (props) => {
           <Grid item xs={12} className={classes.messagesRow}>
             {messages && (
               <List>
-                {messages.map((m) => (
+                {Array.from(messages).map((m) => (
                   <ListItem
                     key={m._id}
                     className={classnames(classes.listItem, {
